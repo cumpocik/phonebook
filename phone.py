@@ -55,7 +55,7 @@ def write_txt(filename, phone_book):
                 s = ''
                 for j in phone_book[i].values():
                     s += j + ','
-                phout.write(f'{s[:-1]}')
+                phout.write(f'{s[:-1]}\n')
 def find_by_lastname(phone_book):
     print('Введите фамилию контакта: ')
     lastname = input()
@@ -162,7 +162,7 @@ def copypast(phone_book):
             s = ''
             for j in phone_book[order - 1].values():
                 s += j + ','
-            phout.write(f'{s[:-1]}')
+            phout.write(f'{s[:-1]}\n')
             print('Данные добавлены.')
     else:
         print('Контакт не найден.')
