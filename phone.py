@@ -14,7 +14,8 @@ def work_with_phonebook():
     phone_book = read_txt('phone.txt')
     while (choice != 8):
         if choice == 1:
-            print(phone_book)
+            for contact in phone_book:
+                print(contact['Фамилия'], contact['Имя'], contact['Телефон'], contact['Описание'])
             choice = show_menu()
         elif choice == 2:
             find_by_lastname(phone_book)
